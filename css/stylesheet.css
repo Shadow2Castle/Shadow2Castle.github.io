@@ -63,6 +63,10 @@ header a:hover{
   font-weight: bold;
 }
 
+header img{
+  width: 60px;
+}
+
 /* Intro */
 #intro{
   min-height: 400px;
@@ -83,12 +87,6 @@ header a:hover{
   font-size:20px;
 }
 
-#icon{
-  width: 170px;
-  margin-top:80px;
-  margin-bottom:10px;
-}
-
 /* Divider */
 #divider{
   padding:5px;
@@ -101,6 +99,17 @@ header a:hover{
   text-align: center;
 }
 
+/* Banner */
+#banner{
+  padding:5px;
+  color:#ffffff;
+  background:#1a1a1a;
+}
+
+#banner h1{
+  text-align: center;
+}
+
 /* Boxes */
 #boxes{
   margin-top:20px;
@@ -110,7 +119,7 @@ header a:hover{
 #boxes .box{
   display: inline-block;
   text-align: center;
-  width:30%;
+  width:29%;
   padding:10px;
 }
 
@@ -118,16 +127,34 @@ header a:hover{
   width:90px;
 }
 
+/* Games */
+.games{
+  margin-top:20px;
+  text-align: center;
+}
+
+.games .game{
+  display: inline-block;
+  text-align: center;
+  width:45%;
+  padding:10px;
+}
+
+.games .game img{
+  width: 90%;
+  padding-top: 20px;
+}
+
 a.button {
-    background-color: #f4f4f4;
-    border: none;
-    border-radius: 10px;
-    padding-top: 15px;
-    color: #000;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font: 15px/1.5 Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 10px;
+  padding-top: 15px;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
 }
 
 a.button:hover{
@@ -149,7 +176,8 @@ footer{
   header #logo,
   header nav,
   header nav li,
-  #boxes .box{
+  #boxes .box,
+  .games .game{
     float:none;
     text-align:center;
     width:95%;
