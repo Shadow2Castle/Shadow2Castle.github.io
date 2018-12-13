@@ -99,6 +99,10 @@ header img{
   text-align: center;
 }
 
+.highlight{
+  color: #0066ff;
+}
+
 /* Banner */
 #banner{
   padding:5px;
