@@ -11,8 +11,6 @@ require(['./shake'], function(Shake) {
   //function to call when shake occurs
   function shakeEventDidOccur () {
 
-    myShakeEvent.stop();
-
       //put your own code here etc.
       var x = Math.floor(Math.random() * 10) + 1;
       switch(x) {
