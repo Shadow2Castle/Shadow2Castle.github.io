@@ -1,7 +1,7 @@
 require(['./shake'], function(Shake) {
   var myShakeEvent = new Shake({
       threshold: 15, // optional shake strength threshold
-      timeout: 100 // optional, determines the frequency of event generation
+      timeout: 1000 // optional, determines the frequency of event generation
   });
 
   myShakeEvent.start();
@@ -11,7 +11,7 @@ require(['./shake'], function(Shake) {
   //function to call when shake occurs
   function shakeEventDidOccur () {
 
-    window.removeEventListener('shake', shakeEventDidOccur, false);
+    myShakeEvent.stop();
 
       //put your own code here etc.
       var x = Math.floor(Math.random() * 10) + 1;
