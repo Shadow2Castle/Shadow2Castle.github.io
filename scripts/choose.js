@@ -1,7 +1,7 @@
 require(['./shake'], function(Shake) {
   var myShakeEvent = new Shake({
       threshold: 15, // optional shake strength threshold
-      timeout: 1000 // optional, determines the frequency of event generation
+      timeout: 500 // optional, determines the frequency of event generation
   });
 
   myShakeEvent.start();
